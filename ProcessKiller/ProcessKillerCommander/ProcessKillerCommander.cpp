@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     }
 	KillProcessArgs args = {static_cast<UINT32>(std::stoi(argv[1]))};
 	DWORD returned_bytes = 0;
-    if (!DeviceIoControl(handle, 0x1337, &args, sizeof args,
+    if (!DeviceIoControl(handle, 0x22CCDC, &args, sizeof args,
 		nullptr, 0, &returned_bytes, nullptr)) {
 		std::cout << "device ioctl failed" << std::endl;
 		CloseHandle(handle);

@@ -49,6 +49,6 @@ plink -batch -P 22 -pw $TEST_MACHINE_PASSWORD $TEST_MACHINE_USERNAME`@$TEST_MACH
 $WINDBG_SCRIPT="$PSScriptRoot\script.txt"
 
 Write-Host "[+] Attaching the debugging session"
-"echo .srcpath+ `"$SOURCE_DIRECOTY`" > $WINDBG_SCRIPT" | cmd
+"echo .srcpath `"$SOURCE_DIRECOTY`" > $WINDBG_SCRIPT" | cmd
 "echo .reload /fn $PROJECT_NAME.sys >> $WINDBG_SCRIPT" | cmd
 "`"$WINDBG`" -k net:port=$DEBUG_PORT,key=$DEBUG_KEY -c `"$<$WINDBG_SCRIPT`" " | cmd

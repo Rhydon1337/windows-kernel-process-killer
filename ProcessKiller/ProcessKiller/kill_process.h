@@ -1,5 +1,6 @@
 #pragma once
-#include <wdm.h>
+
+#include <ntifs.h>
 
 struct KillProcessArgs {
 	UINT32 pid;

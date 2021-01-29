@@ -18,6 +18,7 @@
     <Configuration>Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
     <RootNamespace>ProcessKiller</RootNamespace>
+    <ProjectName>ProcessKiller</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -55,11 +56,15 @@
     <ClCompile Include="device_handlers.cpp" />
     <ClCompile Include="kill_process.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ObjectHandle.cpp" />
+    <ClCompile Include="ProcessReference.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="consts.h" />
     <ClInclude Include="device_handlers.h" />
     <ClInclude Include="kill_process.h" />
+    <ClInclude Include="ObjectHandle.h" />
+    <ClInclude Include="ProcessReference.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

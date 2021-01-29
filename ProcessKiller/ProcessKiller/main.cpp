@@ -1,4 +1,4 @@
-#include <wdm.h>
+#include <ntifs.h>
 
 #include "device_handlers.h"
 #include "consts.h"

@@ -1,5 +1,5 @@
 #pragma once
-#include <wdm.h>
+#include <ntifs.h>
 
 #define KILL_PROCESS_IOCTL CTL_CODE(FILE_DEVICE_UNKNOWN, 0x1337, METHOD_BUFFERED, FILE_WRITE_DATA)
 
